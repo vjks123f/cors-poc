@@ -1,16 +1,1 @@
-<script>
-fetch("https://pro.smallpdf.com/v1/braintree-client-token", {
-  method: "POST",
-  credentials: "include",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    "currency": "USD",
-    "version": 3
-  })
-})
-.then(r => r.text())
-.then(d => document.getElementById("out").innerText = d)
-.catch(e => document.getElementById("out").innerText = e);
-</script>
+
